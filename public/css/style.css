@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+}
+/*the above fixed my problem with the backdrop div not appearing to cover the entire page*/
+
+body {
+  background: url('https://webprintmore.com/wp-content/uploads/2017/08/4214905-background-images-for-websites.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-width: 100vw;
+  min-height: 100vh;
+  color: black;
+}
+
+h1 {
+  width: 400px;
+  margin-left: 36%;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.row1 {
+  padding: 5px;
+}
+
+.row2 {
+  padding: 5px;
+}
+
+.btn {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 5px;
+}
+
+.active {
+  border-bottom: 2px solid red;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+}
+
+.backdrop {
+  position: fixed;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: rgba(0,0,0, 0.7);
+}
